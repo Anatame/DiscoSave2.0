@@ -9,7 +9,7 @@
     min-height: 280px;
     width: 450px;
     background-color: #161616;
-    border-radius: 24px;
+    border-radius: 16px;
     position: relative;
 }
 
@@ -41,4 +41,38 @@
     width: 180px;
 
     font-size: 1.5em;
+}
+
+/* Server Screen */
+.TopBar{
+    display: flex;
+    padding: 15px 0px 40px 40px;
+    justify-content: space-between
+}
+.title{
+    color: #AA73E1;
+    font-size: 1em;
+}
+
+.SearchBarContainer{
+    margin-top: 15px;
+    margin-left: 70px;
+}
+
+.SearchBar{
+    margin-top: -4px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 90px;
+    height: 35px;
+    background-color: #FFFFFF14;
+    color: rgba(255, 255, 255, 0.459);
+    border: none;
+    border-radius: 12px;
+    outline: none;
+}
+
+.MenuButtonContainer{
+    margin-top: 15px;
+    margin-right: 30px;
 }

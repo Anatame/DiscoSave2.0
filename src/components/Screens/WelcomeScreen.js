@@ -1,23 +1,11 @@
 import React from 'react';
 import {motion} from "framer-motion";
 
-const WelcomeScreen = ({ isVisible, handleClick }) => {
-    const welcomeScreenVariant = {
-        visible: {
-            opacity: 1
-        },
-
-        hidden: {
-            opacity: 0
-        }
-    }
+const WelcomeScreen = ({handleClick }) => {
 
 
     return <motion.div
         className='Background'
-        initial={false}
-        variants={welcomeScreenVariant}
-        animate={!isVisible ? "visible" : "hidden"}
         >
                 
         <motion.div >  
