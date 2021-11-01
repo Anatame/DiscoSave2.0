@@ -1,9 +1,21 @@
-import React from 'react';
-import { m, motion } from 'framer-motion'
+import React, {useState} from 'react';
+import { motion } from 'framer-motion'
 import SearchBar from '../SearchBar'
 import MenuButton from '../MenuButton'
+import PathLabels from '../PathLabels'
 
 const ServerScreen = () => {
+    const [paths, setPaths] = useState([
+        {
+            id: 0,
+            name: "Server"
+        },
+        {
+            id: 1,
+            name: "Messages"
+        }
+    ])
+
     return (
         <motion.div>
             <motion.div className="TopBar">
@@ -16,8 +28,19 @@ const ServerScreen = () => {
                     <MenuButton/>
                 </motion.div>
         
+            </motion.div>
+            
+            <motion.div className="BodyContainer">
+                <motion.div className="PathsContainer">
+                    <PathLabels paths={paths}/>
+                </motion.div>   
+
+                <motion.div className="ListContainer">
+
                 </motion.div>
             </motion.div>
+
+        </motion.div>
 
 
     );
