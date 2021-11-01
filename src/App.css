@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
+.App{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Background {
+    margin-top:70px;
+    min-height: 280px;
+    width: 450px;
+    background-color: #161616;
+    border-radius: 24px;
+    position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.BookmarkLogo{
+    height: 80px;
+    margin-top:50px;
+    margin-left: 55px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.TagLine {
+    color: #fff;
+    font-size: 1.7em;
+    width:250px;
+    position: absolute;
+    right: 50px;
+    top: 50px;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.ContinueBtn{
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+    background-color: #AA73E1;
+    color: #fff;
+    border-radius:8px;
+    height: 60px;
+    width: 180px;
+
+    font-size: 1.5em;
 }
